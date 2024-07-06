@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO ARTS GALLERY</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <form id="form">
+            <input type="text" id="search" class="search" placeholder="Search">
+        </form>
+    </header>
+    
+ <div class="container">
+    <h1><p style="color: white;">WELCOME TO ARTS GALLERY</p></h1>
+    <input type="text" id="searchBar" onkeyup="filterImages()" placeholder="Search images...">
+    <ul class="control">
+        <li class="buttons" onclick="filterCategory('all')">all</li>
+        <li class="buttons" onclick="filterCategory('sports')">sports</li>
+        <li class="buttons" onclick="filterCategory('movie')">movie</li>
+        <li class="buttons" onclick="filterCategory('world')">world</li>
+    </ul>
+
+    <div class="pics">
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 1.jpg" alt="Image 1" width="300px" height="250px">
+            <h3>KOHLI</h3>
+         <div class="price">$2000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+        <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 4.jpg" alt="Image 4" width="300px" height="250px">
+            <h3>CHENNAI SUPER KINGS</h3>
+         <div class="price">$3000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a><h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 2.jpg" alt="Image 2" width="300px" height="250px">
+          <h3>DHONI</h3>
+         <div class="price">$7000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 5.jpg" alt="Image 5" width="300px" height="250px">
+            <h3>JADEJA</h3>
+         <div class="price">$5400000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 8.jpg" alt="Image 8" width="300px" height="250px">
+            <h3>SMRITI</h3>
+         <div class="price">$2200000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 3.jpg" alt="Image 3" width="300px" height="250px">
+            <h3>ROHITH</h3>
+         <div class="price">$2900000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 7.jpg" alt="Image 7" width="300px" height="250px">
+            <h3>GAME </h3>
+         <div class="price">$9000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container movie">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 6.jpg" alt="Image 6" width="300px" height="250px">
+            <h3>NANI </h3>
+         <div class="price">$10000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container world">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 9.jpg" alt="Image 9" width="300px" height="250px">
+         <h3>NATURE</h3>
+         <div class="price">$5000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+    </div>
+
+    <div class="selections-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="images/1.png" alt="">
+      <h3>KOHLI</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>(250)</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2000000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">select</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="images/2.png" alt="">
+      <h3>CHENNAI SUPER KINGS </h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$3000000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">select</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/3.png" alt="">
+      <h3>DHONI</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$7000000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">select</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="images/4.png" alt="">
+      <h3>JADEJA</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$5400000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">select</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="images/5.png" alt="">
+      <h3>SMRITI</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2200000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/6.png" alt="">
+      <h3>ROHITH</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2900000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="pending">remove</a>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/6.png" alt="">
+      <h3>GAME</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$9000000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+      <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/6.png" alt="">
+      <h3>NATURE</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$5000000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="pending">remove</a>
+
+</div>
+<main id="main"></main>
+     <script src="img.js"></script>
+</body>
+</html> 
