@@ -1,0 +1,564 @@
+//HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO ARTS GALLERY</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <form id="form">
+            <input type="text" id="search" class="search" placeholder="Search">
+        </form>
+    </header>
+    
+ <div class="container">
+    <h1><p style="color: white;">WELCOME TO ARTS GALLERY</p></h1>
+    <input type="text" id="searchBar" onkeyup="filterImages()" placeholder="Search images...">
+    <ul class="control">
+        <li class="buttons" onclick="filterCategory('all')">all</li>
+        <li class="buttons" onclick="filterCategory('sports')">sports</li>
+        <li class="buttons" onclick="filterCategory('movie')">movie</li>
+        <li class="buttons" onclick="filterCategory('world')">world</li>
+    </ul>
+
+    <div class="pics">
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 1.jpg" alt="Image 1" width="300px" height="250px">
+            <h3>KOHLI</h3>
+         <div class="price">$2000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+        <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 4.jpg" alt="Image 4" width="300px" height="250px">
+            <h3>CHENNAI SUPER KINGS</h3>
+         <div class="price">$3000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a><h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 2.jpg" alt="Image 2" width="300px" height="250px">
+          <h3>DHONI</h3>
+         <div class="price">$7000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 5.jpg" alt="Image 5" width="300px" height="250px">
+            <h3>JADEJA</h3>
+         <div class="price">$5400000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 8.jpg" alt="Image 8" width="300px" height="250px">
+            <h3>SMRITI</h3>
+         <div class="price">$2200000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 3.jpg" alt="Image 3" width="300px" height="250px">
+            <h3>ROHITH</h3>
+         <div class="price">$2900000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container sports">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 7.jpg" alt="Image 7" width="300px" height="250px">
+            <h3>GAME </h3>
+         <div class="price">$9000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container movie">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 6.jpg" alt="Image 6" width="300px" height="250px">
+            <h3>NANI </h3>
+         <div class="price">$10000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+        <div class="img-container world">
+            <img src="C:/Users/91812/Desktop/HTMLDEMO/image/img 9.jpg" alt="Image 9" width="300px" height="250px">
+         <h3>NATURE</h3>
+         <div class="price">$5000000.00</div>
+         <h3><a href="#" class="buy" onclick="selectImage(event, 'sports-1')">select</a></h3>
+         <h3><a href="#" class="remove" onclick="removeImage(event, 'sports-1')">remove</a></h3>
+
+        </div>
+    </div>
+
+    <div class="selections-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="images/1.png" alt="">
+      <h3>KOHLI</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>(250)</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2000000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">select</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">
+      <i class="fas fa-times"></i>
+      <img src="images/2.png" alt="">
+      <h3>CHENNAI SUPER KINGS </h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$3000000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">select</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/3.png" alt="">
+      <h3>DHONI</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$7000000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">select</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="images/4.png" alt="">
+      <h3>JADEJA</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$5400000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">select</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="images/5.png" alt="">
+      <h3>SMRITI</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2200000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/6.png" alt="">
+      <h3>ROHITH</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$2900000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="pending">remove</a>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/6.png" alt="">
+      <h3>GAME</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$9000000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="pending">remove</a>
+      </div>
+   </div>
+      <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/6.png" alt="">
+      <h3>NATURE</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <div class="price">$5000000.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="pending">remove</a>
+
+</div>
+<main id="main"></main>
+     <script src="img.js"></script>
+</body>
+</html> 
+
+// CSS CODE
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('C:/Users/91812/Desktop/HTMLDEMO/image/free.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    color: #444;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#searchBar {
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    border: .1rem solid  black;
+}
+
+ul.control {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+ul.control li.buttons {
+    padding: 1rem 2rem;
+    background: #444;
+    color: #fff;
+    margin: 0 1rem;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+ul.control li.buttons:hover {
+    background: #27ae60;
+}
+
+.pics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.img-container {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+
+.img-container:hover {
+    outline: .2rem solid #222;
+    transform: scale(0.8) rotate(-15deg);a
+    outline-offset: 0;
+}
+
+.img-container img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-container:hover img {
+    transform: scale(.9);
+}
+
+.img-container h3 {
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: #444;
+}
+
+.img-container:hover h3 {
+    color: #27ae60;
+}
+
+.img-container .price {
+    font-size: 2rem;
+    color: #444;
+}
+
+.selections-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 50%;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+}
+
+.preview.active {
+    display: inline-block;
+}
+
+.preview img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.preview .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #444;
+    font-size: 4rem;
+}
+
+.preview .fa-times:hover {
+    transform: rotate(90deg);
+}
+
+.preview h3 {
+    color: #444;
+    padding: .5rem 0;
+    font-size: 2.5rem;
+}
+
+.preview .stars {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+}
+
+.preview .stars i {
+    color: #27ae60;
+}
+
+.preview .stars span {
+    color: #999;
+}
+
+.preview p {
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: #777;
+}
+
+.preview .price {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: #27ae60;
+}
+
+.preview .buttons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.preview .buttons a {
+    flex: 1 1 16rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #444;
+    border: .1rem solid #444;
+}
+
+.preview .buttons a.buy {
+    background: #444;
+    color: #fff;
+}
+
+.preview .buttons a.buy:hover {
+    background: #111;
+}
+
+.preview .buttons a.pending:hover {
+    background: #444;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .preview img {
+        height: 25rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+//JS code
+function filterCategory(category) {
+    const images = document.querySelectorAll('.img-container');
+
+    images.forEach(image => {
+        if (category === 'all') {
+            image.style.display = 'block';
+        } else {
+            if (image.classList.contains(category)) {
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+        }
+    });
+}
+function filterImages() {
+    const searchInput = document.getElementById('searchBar').value.toLowerCase();
+    const images = document.querySelectorAll('.img-container');
+
+    images.forEach(image => {
+        const imgTitle = image.querySelector('h3').textContent.toLowerCase();
+        if (imgTitle.includes(searchInput)) {
+            image.style.display = 'block';
+        } else {
+            image.style.display = 'none';
+        }
+    });
+}
+document.getElementById('searchBar').addEventListener('keyup', filterImages);
+const previews = document.querySelectorAll('.preview');
+const closeButtons = document.querySelectorAll('.fa-times');
+const buyButtons = document.querySelectorAll('.buy');
+const pendingButtons = document.querySelectorAll('.pending');
+
+buyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const target = button.closest('.preview').getAttribute('data-target');
+        const preview = document.querySelector(`.preview[data-target="${target}"]`);
+        preview.style.display = 'flex';
+        document.querySelector('.selections-preview').style.display = 'flex';
+    });
+});
+
+pendingButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        button.closest('.preview').style.display = 'none';
+    });
+});
+
+closeButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelector('.selections-preview').style.display = 'none';
+        previews.forEach(preview => preview.style.display = 'none');
+    });
+});
