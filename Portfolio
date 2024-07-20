@@ -1,0 +1,374 @@
+// HTML CODE 1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome MS Dhoni Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to MS Dhoni's Portfolio</h1>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="category">
+                    <span>General</span>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </li>
+                <li class="category">
+                    <span>Professional</span>
+                    <ul>
+                        <li><a href="#career">Career</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                    </ul>
+                </li>
+                <li class="category">
+                    <span>Media</span>
+                    <ul>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Dhoni</h2>
+        <div class="content">
+            <p>Mahendra Singh Dhoni, commonly known as MS Dhoni, is an Indian cricketer who served as the captain of the Indian national team. He is widely regarded as one of the greatest cricketers and captains in the history of the game MS Dhoni probably ranks as the third-most popular Indian cricketer ever, behind only Sachin Tendulkar and Virat Kohli. He emerged from a cricketing backwater, the eastern Indian state of Jharkhand.</p>
+            <img src="images\won.webp" width="220" height="250" alt="MS Dhoni" class="square-image">
+        </div>
+    </section>
+
+    <section id="career">
+        <h2>Career</h2>
+        <div class="content">
+            <p>MS Dhoni made his debut for the Indian cricket team in 2004. He has led India to numerous victories, including the ICC T20 World Cup in 2007, the ICC Cricket World Cup in 2011, and the ICC Champions Trophy in 2013  Dhoni has been the face of the Chennai Super Kings franchise, inspiring fierce cult fandom. When Super Kings were reinstated in 2018 after two seasons out serving a suspension, he was back at the helm, leading the team to a fairy-tale third title, and he almost repeated the feat in 2019, when CSK lost a thrilling final against Mumbai Indians by just one run. Dhoni led them to their third title win in 2021, and repeated the feat in 2023, making CSK the league's most successful franchise, alongside Mumbai Leadership Style: Known for his calm and strategic approach, Dhoni’s leadership has been widely praised and admired.
+                Impact: Dhoni is regarded as one of the greatest finishers in cricket history and has inspired a generation of cricketers with his performances and leadership.</p>
+            <img src="C:\Users\91812\Desktop\HTMLDEMO\images\wiki.webp" alt="Career" class="circle-image" width="300" height="250" >
+            <img src="C:\Users\91812\Desktop\HTMLDEMO\images\ipl2.webp" alt="career" class="circle-image" width="300" height="250">
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="content"></div>
+        <ul>
+            <li>2005 First ODI Century </li>
+            <li>2007 ICC T20 World Cup Winner</li>
+            <li>2010 & 2016 Asia Cup Winner</li>
+            <li>2010,2011,2018,2022 Chennai Super Kings IPL Wins </li>
+            <li>2011 ICC Cricket World Cup Winner</li>
+            <li>2013 ICC Champions Trophy Winner</li>
+        
+        </ul>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="images/icc.jpeg" class="square-image" width="250" height="300">
+            <img src="images/ipl.jpeg" class="square-image" width="250" height="300">
+            <img src="images\dhomi.webp" class="square-image" width="250" height="300">
+            <img src="images\wiki.webp" class="square-image" width="250" height="300">
+            <img src="images\won.webp" class="square-image" width="250" height="300">
+            <img src="images\fan.webp"  class="square-image" width="250" height="300">
+
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <h2 style="color: floralwhite;">Name - Ms.dhoni</h2>
+       <h2  style="color: floralwhite;">EMAIL - dhoni 07@IndianCricket</h2>
+       <h2  style="color: floralwhite;">Mobile - +9167875431238 </h2>
+    </section>
+
+    <footer>
+        <p>&copy; MS Dhoni Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+// LINKING HTML CODE 2
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Page</title>
+	<h2><a href="C:\Users\91812\Desktop\HTMLDEMO\index.html" target="_blank">Portfolio</a></h2>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+// CSS CODE
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    color: white;
+}
+
+body {
+    background-image: url('images/front.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+
+section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.5rem;
+    color:black;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.6rem;
+    color: purple;
+    line-height: 1.5;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 1rem;
+}
+
+nav ul li span {
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: black;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    padding: 1rem;
+}
+
+nav ul li ul li a {
+    font-size: 1.6rem;
+    color: blueviolet;
+    display: block;
+}
+
+nav ul li ul li a:hover {
+    color: black;
+}
+
+.circle-image {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    transition: transform .2s;
+}
+
+.circle-image:hover {
+    transform: rotate(15deg);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.content img {
+    margin-right: 2rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 1.6rem;
+    color: black;
+}
+
+form input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: .1rem solid #ccc;
+    border-radius: .5rem;
+}
+
+form button {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    background: #27ae60;
+    color: black;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #219150;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+}
+
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+//  JS CODE 
+document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('nav ul li.category > span');
+    
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const subMenu = item.nextElementSibling;
+            if (subMenu.style.display === 'block') {
+                subMenu.style.display = 'none';
+            } else {
+                subMenu.style.display = 'block';
+            }
+        });
+    });
+
+    const images = document.querySelectorAll('.circle-image');
+    images.forEach(img => {
+        img.addEventListener('mouseover', () => {
+            img.style.transform = 'rotate(15deg)';
+        });
+        img.addEventListener('mouseout', () => {
+            img.style.transform = 'rotate(0deg)';
+        });
+    });
+
+    const form = document.querySelector('#contactForm');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const name = document.querySelector('#name').value;
+        const email = document.querySelector('#email').value;
+        const mobile = document.querySelector('#mobile').value;
+        
+        if (name && email && mobile) {
+            alert(`Thank you, ${name}! Your message has been submitted.`);
+            form.reset();
+        } else {
+            alert('Please fill in all the fields.');
+        }
+    });
+});
